@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Good-->
+        <scene sceneID="hNz-n2-bh7">
+            <objects>
+                <viewController id="9pv-A4-QxB" customClass="GoodViewController" customModule="iKid" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="What is an astronaut's favorite part of a computer?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D1Y-Qk-51f">
+                                <rect key="frame" x="77" y="428" width="221" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="PDr-ZK-Ulh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H0F-9t-0Pj">
+                                <rect key="frame" x="57" y="79" width="261" height="310"/>
+                                <state key="normal" image="astronaut"/>
+                                <connections>
+                                    <action selector="seeAnswer:" destination="9pv-A4-QxB" eventType="touchUpInside" id="maZ-J6-Ov3"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="H0F-9t-0Pj" firstAttribute="width" secondItem="tsR-hK-woN" secondAttribute="height" multiplier="9:23" id="3xq-wn-3ab"/>
+                            <constraint firstItem="D1Y-Qk-51f" firstAttribute="top" secondItem="H0F-9t-0Pj" secondAttribute="bottom" constant="39" id="HmB-4Y-BuK"/>
+                            <constraint firstItem="D1Y-Qk-51f" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="77" id="KEe-zt-esZ"/>
+                            <constraint firstItem="D1Y-Qk-51f" firstAttribute="centerX" secondItem="PQr-Ze-W5v" secondAttribute="centerX" id="cE9-9G-A8K"/>
+                            <constraint firstItem="H0F-9t-0Pj" firstAttribute="centerX" secondItem="PQr-Ze-W5v" secondAttribute="centerX" id="idK-Ry-qan"/>
+                            <constraint firstItem="H0F-9t-0Pj" firstAttribute="centerY" secondItem="PQr-Ze-W5v" secondAttribute="centerY" id="yBJ-gS-rNl"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Good" image="first" id="acW-dT-cKf"/>
+                    <connections>
+                        <outlet property="astronaut" destination="H0F-9t-0Pj" id="70T-JK-aSr"/>
+                        <outlet property="question" destination="D1Y-Qk-51f" id="VaT-qw-lL3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="749.60000000000002" y="-320.68965517241384"/>
+        </scene>
+        <!--Dad-->
+        <scene sceneID="TBW-X3-3XE">
+            <objects>
+                <viewController id="J8a-UV-lVb" customClass="DadViewController" customModule="iKid" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gva-cA-NQm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dad, did you get a haircut?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UUw-fP-1iU">
+                                <rect key="frame" x="67" y="488" width="241" height="26"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fcM-eX-hte">
+                                <rect key="frame" x="59" y="138" width="256" height="256"/>
+                                <state key="normal" image="haircut1"/>
+                                <connections>
+                                    <action selector="seeAnswer:" destination="J8a-UV-lVb" eventType="touchUpInside" id="Rpe-Zi-83V"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="fcM-eX-hte" firstAttribute="width" secondItem="gva-cA-NQm" secondAttribute="height" multiplier="256:667" id="5p6-di-rNz"/>
+                            <constraint firstItem="UUw-fP-1iU" firstAttribute="top" secondItem="fcM-eX-hte" secondAttribute="bottom" constant="41" id="5qC-Rt-jKC"/>
+                            <constraint firstItem="fcM-eX-hte" firstAttribute="centerY" secondItem="7ON-wI-eAO" secondAttribute="centerY" id="HuO-c8-srh"/>
+                            <constraint firstItem="fcM-eX-hte" firstAttribute="centerX" secondItem="7ON-wI-eAO" secondAttribute="centerX" id="fUt-fk-jsv"/>
+                            <constraint firstItem="UUw-fP-1iU" firstAttribute="centerX" secondItem="7ON-wI-eAO" secondAttribute="centerX" id="z8e-RT-O3A"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="7ON-wI-eAO"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Dad" image="first" id="vnW-g8-Rih"/>
+                    <connections>
+                        <outlet property="haircut1" destination="fcM-eX-hte" id="Tqb-Qm-JLo"/>
+                        <outlet property="question" destination="UUw-fP-1iU" id="rNl-nj-ifp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cWW-qf-UYO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1" y="838"/>
+        </scene>
+        <!--Pun-->
+        <scene sceneID="wg7-f3-ORb">
+            <objects>
+                <viewController id="8rJ-Kc-sve" customClass="PunViewController" customModule="iKid" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2dI-1V-maj">
+                                <rect key="frame" x="56" y="163" width="262" height="192"/>
+                                <state key="normal" image="pizza"/>
+                                <connections>
+                                    <action selector="seeAnswer:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="w92-4S-EkG"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Want to hear a pizza joke?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fx8-GB-rn4">
+                                <rect key="frame" x="73" y="435" width="228" height="23"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="9eA-Qi-US3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Fx8-GB-rn4" firstAttribute="centerX" secondItem="O1u-W8-tvY" secondAttribute="centerX" id="0ex-P2-EsJ"/>
+                            <constraint firstItem="2dI-1V-maj" firstAttribute="width" secondItem="QS5-Rx-YEW" secondAttribute="height" multiplier="262:667" id="Fi9-Ug-Qcn"/>
+                            <constraint firstItem="Fx8-GB-rn4" firstAttribute="leading" secondItem="O1u-W8-tvY" secondAttribute="leading" constant="81" id="Tzd-aP-Rzh"/>
+                            <constraint firstItem="2dI-1V-maj" firstAttribute="centerY" secondItem="O1u-W8-tvY" secondAttribute="centerY" id="YLq-Ee-lHy"/>
+                            <constraint firstItem="O1u-W8-tvY" firstAttribute="bottom" secondItem="Fx8-GB-rn4" secondAttribute="bottom" constant="161" id="afF-1U-qE7"/>
+                            <constraint firstItem="2dI-1V-maj" firstAttribute="centerX" secondItem="O1u-W8-tvY" secondAttribute="centerX" id="qgX-rr-qva"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Pun" image="second" id="cPa-gy-q4n"/>
+                    <connections>
+                        <outlet property="pizza" destination="2dI-1V-maj" id="Ffd-wz-faM"/>
+                        <outlet property="question" destination="Fx8-GB-rn4" id="y8f-5w-R43"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="749.60000000000002" y="359.37031484257875"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="yl2-sM-qoP">
+            <objects>
+                <tabBarController id="49e-Tb-3d3" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
+                        <rect key="frame" x="0.0" y="975" width="768" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
+                        <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
+                        <segue destination="J8a-UV-lVb" kind="relationship" relationship="viewControllers" id="LQZ-qb-0dx"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="0.0" y="0.0"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="astronaut" width="260" height="310"/>
+        <image name="first" width="30" height="30"/>
+        <image name="haircut1" width="256" height="256"/>
+        <image name="pizza" width="262" height="192"/>
+        <image name="second" width="30" height="30"/>
+    </resources>
+</document>
